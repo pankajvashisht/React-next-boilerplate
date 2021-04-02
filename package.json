@@ -1,46 +1,47 @@
 {
-  "name": "roomnett",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint src",
-		"lint-fix": "yarn lint --fix "
-  },
-  "dependencies": {
-    "husky": "^6.0.0",
-    "next": "10.1.2",
-    "nivedan": "^1.0.6",
-    "prop-types": "^15.7.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-redux": "^7.2.3",
-    "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "^5.2.3"
-  },
-  "husky": {
-		"hooks": {
-			"pre-commit": "npm run lint-fix",
-			"pre-push": "npm run lint"
-		}
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"lint-staged": {
-		"*.js": "eslint"
-	},
-	"engines": {
-		"node": "15.x",
-		"yarn": "1.22.x"
-	},
-  "devDependencies": {
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "lint-staged": "^10.5.4"
+ "name": "roomnett",
+ "version": "0.1.0",
+ "private": true,
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "eslint src",
+  "lint-fix": "yarn lint --fix "
+ },
+ "dependencies": {
+  "eslint": "^7.23.0",
+  "husky": "^6.0.0",
+  "next": "10.1.2",
+  "nivedan": "^1.0.6",
+  "prop-types": "^15.7.2",
+  "react": "17.0.2",
+  "react-dom": "17.0.2",
+  "react-redux": "^7.2.3",
+  "redux": "^4.0.5",
+  "redux-thunk": "^2.3.0",
+  "styled-components": "^5.2.3"
+ },
+ "husky": {
+  "hooks": {
+   "pre-commit": "npm run lint-fix",
+   "pre-push": "npm run lint"
   }
+ },
+ "eslintConfig": {
+  "extends": "react-app"
+ },
+ "lint-staged": {
+  "*.js": "eslint"
+ },
+ "engines": {
+  "node": "15.x",
+  "yarn": "1.22.x"
+ },
+ "devDependencies": {
+  "eslint-config-airbnb": "^18.2.1",
+  "eslint-config-airbnb-base": "^14.2.1",
+  "eslint-plugin-jsx-a11y": "^6.4.1",
+  "lint-staged": "^10.5.4"
+ }
 }
