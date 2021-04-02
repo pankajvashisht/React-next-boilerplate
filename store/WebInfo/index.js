@@ -1,4 +1,4 @@
 export * from './initialState'
 export * from './constants'
 export * from './action'
-export * from './reducser'
+export * from './reducer'
